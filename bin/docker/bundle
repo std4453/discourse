@@ -1,5 +1,5 @@
 #!/bin/bash
 
 PARAMS="$@"
-CMD="cd /src && USER=discourse RAILS_ENV=${RAILS_ENV:=development} bundle $PARAMS"
+CMD="cd /src && USER=discourse RAILS_ENV=${RAILS_ENV:=development} HTTP_PROXY=http://host:1083 HTTPS_PROXY=http://host:1083 bundle $PARAMS"
 docker exec -it -u discourse:discourse discourse_dev /bin/bash -c "$CMD"
