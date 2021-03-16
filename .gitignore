@@ -154,3 +154,5 @@ tags
 
 # file used with `discourse_dev` gem in development environment.
 config/dev.yml
+
+!/plugins/test-plugin
