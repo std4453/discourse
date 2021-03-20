@@ -1,2 +1,10 @@
 import Controller from "@ember/controller";
-export default Controller.extend({});
+import { asd } from 'discourse/plugins/TestPlugin/discourse/lib/test';
+
+export default Controller.extend({
+    actions: {
+        alert() {
+            asd();
+        }
+    }
+});

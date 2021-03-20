@@ -1,0 +1,1 @@
+export function asd() { console.log('it works #5'); }

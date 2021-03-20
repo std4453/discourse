@@ -7,12 +7,8 @@
 # url: https://github.com/
 
 register_asset 'stylesheets/common/test-plugin.scss'
-register_asset 'stylesheets/desktop/test-plugin.scss', :desktop
-register_asset 'stylesheets/mobile/test-plugin.scss', :mobile
 
-enabled_site_setting :test_plugin_enabled
-
-PLUGIN_NAME ||= 'TestPlugin'
+PLUGIN_NAME ||= 'test-plugin'
 
 load File.expand_path('lib/test-plugin/engine.rb', __dir__)
 
