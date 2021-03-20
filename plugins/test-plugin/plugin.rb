@@ -6,8 +6,6 @@
 # authors: 
 # url: https://github.com/
 
-register_asset 'stylesheets/common/test-plugin.scss'
-
 PLUGIN_NAME ||= 'test-plugin'
 
 load File.expand_path('lib/test-plugin/engine.rb', __dir__)
